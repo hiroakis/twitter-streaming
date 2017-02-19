@@ -1,0 +1,35 @@
+{
+    "follow": [
+        "awscloud",
+        "google",
+        "googlecloud",
+        "heroku",
+        "sendgrid",
+        "pagerduty",
+        "pingdom",
+        "mackerelio",
+        "github",
+        "circleci",
+        "bugsnag",
+        "docker",
+        "golang",
+        "ThePSF",
+        "rails",
+        "ansible",
+        "mysql",
+        "postgresql",
+        "nginx",
+        "openresty",
+        "hashicorp",
+        "publickey",
+        "BlackHatEvents",
+        "cyberdefense_jp",
+        "soundcloud",
+        "SoundCloudJobs",
+        "la_luna_azul"
+    ],
+    "track": [
+        "hiroakis.com",
+        "hiroakis"
+    ]
+}
