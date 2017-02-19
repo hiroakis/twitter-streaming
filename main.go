@@ -23,16 +23,12 @@ var filterConfig FilterConfig
 
 func loadConfig(configPath string, conf *FilterConfig) error {
 
-	var err error
-	var file []byte
-
-	file, err = ioutil.ReadFile(configPath)
+	file, err := ioutil.ReadFile(configPath)
 	if err != nil {
 		return err
 	}
 
-	err = json.Unmarshal(file, &conf)
-	if err != nil {
+	if err := json.Unmarshal(file, &conf); err != nil {
 		return err
 	}
 
@@ -64,9 +60,6 @@ func (client *Client) getUserIdsFromScreenNames(screenNames []string) ([]string,
 	var ids []string
 	for _, v := range friendShips {
 		ids = append(ids, v.Id_str)
-	}
-	if err != nil {
-		return nil, err
 	}
 	return ids, nil
 }
